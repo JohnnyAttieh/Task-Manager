@@ -1,0 +1,142 @@
+.content-square{
+    background-color: rgb(255, 255, 255);
+    width: 22%;
+    height: 45%;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    margin-bottom: 10%;
+    height: auto;
+
+}
+
+.header{
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.header > h1:nth-child(1){
+    font-size: 25px;
+    color: rgb(242, 242, 71);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.header > h1:nth-child(2){
+    font-size: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.placeholder{
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(197, 194, 194);
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-right: 40px;
+}
+
+input{
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-radius: 10px;
+    margin-left: 10px;
+
+}
+
+.add{
+    height: 100%;
+    width: 15%;
+    background-color:rgb(242, 242, 71);
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} 
+
+.add:hover{
+    opacity: 70%;
+    cursor: pointer;
+}
+
+
+.tasks{
+    width: 100%;
+    display: flex; 
+   /* flex-direction: row;
+    align-items: center;
+    justify-content:space-around;*/
+}
+
+
+.tasks > ul{
+    padding: 20px;
+    margin-left: 20px;
+    list-style: none;
+
+
+}
+
+.tasks > ul > li{
+    margin-bottom: 10px;
+    cursor: pointer;
+    
+    
+}
+
+.tasks > ul > li::before{
+    content: '';
+    background-image: url('/Assets/Unchecked.png');
+    background-position: center;
+    position: absolute;
+}
+
+.tasks > ul > li.completed {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.list-container{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.delete {
+    height: 25px;
+    width: 40px;
+    margin-left: 10px;
+    background-color:rgb(242, 242, 71);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit{
+    height: 25px;
+    width: 40px;
+    margin-left: 10px;
+    background-color:rgb(242, 242, 71);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.save{
+    height: 25px;
+    width: 40px;
+    margin-left: 10px;
+    background-color:rgb(242, 242, 71);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+
+}
